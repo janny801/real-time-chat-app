@@ -16,15 +16,18 @@ body {
 ul {
     list-style-type: none;
     padding: 0;
-    width: 30%;  /* Smaller width */
-    max-height: 200px;  /* Initial height */
+    width: 30%;  /* Default width */
+    height: 200px;  /* Default height */
+    max-height: none;  /* Remove max-height restriction */
     overflow-y: auto;
     border: 1px solid #444;  /* Darker border */
     border-radius: 5px;
     background-color: #3e3e3e;  /* Slightly lighter dark background */
     margin-bottom: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    resize: vertical;  /* Allows the user to resize the box vertically */
+    resize: both;  /* Allow resizing both vertically and horizontally */
+    min-width: 200px;  /* Set a minimum width */
+    min-height: 100px; /* Set a minimum height */
 }
 
 /* Style for individual messages */
