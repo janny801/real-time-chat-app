@@ -2,22 +2,23 @@ const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http, {
-    cors: { origin: "*" }  // Allow cross-origin requests
+    cors: { origin: "*" }
 });
 
-// Keep track of connected users
+// Track the number of users
 let userCount = 0;
 
-// Serve static files from the 'public' directory
 app.use(express.static(__dirname + '/../public'));
 
-// WebSocket connection
 io.on('connection', (socket) => {
     // Increment user count and assign a username
     userCount++;
     const username = `User ${userCount}`;
 
-    // Notify all clients when a user connects
+    // Send the username to the specific client who just connected
+    socket.emit('your-username', username);
+
+    // Notify all clients when a new user connects
     io.emit('message', `${username} has joined the chat`);
     console.log(`${username} connected`);
 
@@ -34,7 +35,6 @@ io.on('connection', (socket) => {
     });
 });
 
-// Start server on port 8080
 http.listen(8080, () => {
     console.log('Server is listening on http://localhost:8080');
 });
