@@ -11,3 +11,6 @@ npm start
 ```
 
 Open the `app/index.html` file in a browser. 
+
+
+based on https://github.com/fireship-io/socketio-minimal-demo 
