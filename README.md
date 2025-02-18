@@ -21,7 +21,7 @@ A minimal real-time chat application using [Socket.io](https://socket.io/). This
    Run the following command in your terminal to install required dependencies:
 
    ```sh
-   cd server
+   cd server # Navigate to the server directory 
    npm install
    ```
 
