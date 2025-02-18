@@ -1,6 +1,7 @@
-# Basic Socket.io Demo
+# Real-Time Chat App
 
-A bare minimum Socket.io implementation. Learn about [Websockets & Socket.io](https://youtu.be/1BfCnjr_Vjg) on Youtube. 
+A minimal real-time chat application using [Socket.io](https://socket.io/). This project demonstrates how to set up a basic WebSocket connection to enable real-time communication between clients and a server. It was built on top of a tutorial from [WebSockets & Socket.io](https://youtu.be/1BfCnjr_Vjg) on YouTube.
+
 
 ## Run it
 
