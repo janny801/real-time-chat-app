@@ -10,9 +10,9 @@ A minimal real-time chat application using [Socket.io](https://socket.io/). This
 
 
 
-## Run it
+## Usaage
 
-```
+```sh
 cd server
 npm install
 npm start
