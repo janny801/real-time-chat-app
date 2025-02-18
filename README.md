@@ -9,8 +9,7 @@ A minimal real-time chat application using [Socket.io](https://socket.io/). This
 - Simple front-end interface for sending and receiving messages.
 
 
-
-## Usaage
+## Usage
 
 ```sh
 cd server
@@ -18,7 +17,10 @@ npm install
 npm start
 ```
 
-Open the `app/index.html` file in a browser. 
+After running `npm start`, **command-click (or control-click) the link provided in the terminal** to open the chat application in your browser.
 
 
-Based on https://github.com/fireship-io/socketio-minimal-demo 
+
+## Credits
+
+This project is built upon [fireship-io/socketio-minimal-demo](https://github.com/fireship-io/socketio-minimal-demo).
