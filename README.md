@@ -15,15 +15,24 @@ A minimal real-time chat application using [Socket.io](https://socket.io/). This
 - Works on Linux, macOS, and Windows (via WSL or native support)
 
 
-## Usage
+## Compilation and Execution
 
-```sh
-cd server
-npm install
-npm start
-```
+1. **Install Dependencies**  
+   Run the following command in your terminal to install required dependencies:
 
-After running `npm start`, **command-click (or control-click) the link provided in the terminal** to open the chat application in your browser.
+   ```sh
+   cd server
+   npm install
+   ```
+
+2. **Start the Server**  
+   Run the following command to start the server:
+
+   ```sh
+   npm start
+   ```
+
+   After running `npm start`, **command-click (or control-click) the link provided in the terminal** to open the chat application in your browser.
 
 
 
