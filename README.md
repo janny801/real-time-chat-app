@@ -8,6 +8,12 @@ A minimal real-time chat application using [Socket.io](https://socket.io/). This
 - Uses WebSockets via Socket.io for instant communication.
 - Simple front-end interface for sending and receiving messages.
 
+## Requirements
+
+- [Node.js](https://nodejs.org/) installed (recommended: latest LTS version)
+- A terminal or command-line interface
+- Works on Linux, macOS, and Windows (via WSL or native support)
+
 
 ## Usage
 
